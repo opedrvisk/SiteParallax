@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "AespaFont";
+    src: url('aespa_Regular.ttf') format('truetype');
+    font-weight: normal;    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+
+
+:root {
+    --font1: Special Gothic Expanded One, sans-serif;
+    --font2: AespaFont, sans-serif;
+}
+
+* {
+  margin: 0;    
+  padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vh;
+  
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    box-shadow: insert 6px 6px 13px 0px rgba(0, 0, 0, 0.363);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.26);
+    text-shadow: 2px 2px 0px black; 
+}
+
+section#img01 {
+    background-image: url(winterwhiplash.jpg);
+    background-position: center;
+}
+
+section#img02 {
+    background-image: url(karinawhiplash.jpg);
+    background-position: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
